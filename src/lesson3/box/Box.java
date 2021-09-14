@@ -27,6 +27,7 @@ public class Box<T extends Fruits> {
     public boolean compare (Box box) {
         return  this.getWeight() == box.getWeight();
     }
+    //
     public void poorFruit (Box<? super T> box) {
         box.list.addAll(this.list);
         list.clear();
